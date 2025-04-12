@@ -1,6 +1,6 @@
 name: Release CI
 on:
-  workflow_dispatch:
+  workflow_dispatch:on
     inputs:
       prerelease:
         description: 'Mark as Pre-release'
