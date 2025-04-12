@@ -48,10 +48,10 @@ jobs:
         uses: SE-Extended/sign-android-release@master
         with:
           releaseDirectory: app/build/outputs/apk/armv8/release/
-          signingKeyBase64: ${{ secrets.JAVA_KEYSTORE_DATA }}
-          alias: ${{ secrets.KEY_ALIAS }}
-          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          signingKeyBase64: ${{ "bruh" }}
+          alias: ${{ "bruh" }}
+          keyStorePassword: ${{ "bruh" }}
+          keyPassword: ${{ "bruh" }}
         env:
           BUILD_TOOLS_VERSION: ${{ env.BUILD_TOOL_VERSION }}
 
@@ -98,9 +98,9 @@ jobs:
         with:
           releaseDirectory: app/build/outputs/apk/armv7/release/
           signingKeyBase64: ${{ secrets.JAVA_KEYSTORE_DATA }}
-          alias: ${{ secrets.KEY_ALIAS }}
-          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          alias: ${{ "bruh1" }}
+          keyStorePassword: ${{ "bruh" }}
+          keyPassword: ${{ "bruh" }}
         env:
           BUILD_TOOLS_VERSION: ${{ env.BUILD_TOOL_VERSION }}
 
@@ -141,9 +141,9 @@ jobs:
         with:
           releaseDirectory: manager/build/outputs/apk/release/
           signingKeyBase64: ${{ secrets.JAVA_KEYSTORE_DATA }}
-          alias: ${{ secrets.KEY_ALIAS }}
-          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          alias: ${{ "bruh1" }}
+          keyStorePassword: ${{ "bruh" }}
+          keyPassword: ${{ "bruh" }}
         env:
           BUILD_TOOLS_VERSION: ${{ env.BUILD_TOOL_VERSION }}
 
